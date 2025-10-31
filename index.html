@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<main class="app" role="application">
+    <h1>Todo — Simple & Lightweight</h1>
+    <p class="lead">Add tasks, mark them complete, edit, view details or delete them.</p>
+
+    <div class="input-row">
+        <input id="todo-input" type="text" placeholder="Add a new todo..." aria-label="New todo" />
+        <button id="add-btn" title="Add todo">＋</button>
+    </div>
+
+    <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+
+    <div class="footer">
+        <div class="muted" id="items-count">0 items</div>
+        <div class="controls">
+            <button id="clear-completed">Clear completed</button>
+            <button id="clear-all">Clear all</button>
+        </div>
+    </div>
+</main>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h2 id="modal-title">View Todo</h2>
+        <input id="modal-input" type="text" />
+        <div>
+            <button id="save-btn" class="btn-save">Save</button>
+            <button id="close-btn" class="btn-close">Close</button>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
